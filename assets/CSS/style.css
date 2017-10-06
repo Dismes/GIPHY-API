@@ -1,0 +1,15 @@
+#wrapper{
+    background: blue;
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#SearchButton{
+    background: red;
+}
+
+#pics{
+    background: pink;
+}

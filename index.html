@@ -3,40 +3,56 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Index</title>
-    <style type="text/css">
-        button,
-        div,
-        form,
-        input {
-            margin: 10px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <h1>Animal Search</h1>
+    <div id="wrapper">
+        <div class="row">
+            <div class="col-md-12" style="text-align:center">
+                <h1>Animal Search</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <div id="buttons-view"></div>
+            </div>
+
+            <div class="col-md-10">
+                <div class="row">
+                    <form id="movie-form">
+                        <label for="movie-input">Make a button</label>
+                        <input type="text" class="form-control" id="movie-input"><br>
+                        <button id="add-movie" type="button submit" class="btn btn-default">add This BUtton</button>
+
+                    </form>
+                </div>
+                <div class="row panel panel-primary">
+                    <div class="panel-heading">Gifs</div>
+                    <div id="movies-view" class="panel-body"></div>
+                </div>
+
+
+            </div>
+
+
+        </div>
 
 
 
-        <!-- Rendered Buttons will get Dumped Here  -->
-        <div id="buttons-view"></div>
 
-        <form id="movie-form">
-            <label for="movie-input">Add a Movie Bro</label>
-            <input type="text" id="movie-input"><br>
 
-            <!-- Button triggers new movie to be added -->
-            <input id="add-movie" type="submit" value="Add a Movie Bro">
-        </form>
-        <!-- Movies will Get Dumped Dere -->
-        <div id="movies-view"></div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/JS/js.js"></script>
+
 </body>
 <footer>
 
